@@ -1,7 +1,8 @@
 plugins {
     java
     kotlin("jvm") version "1.4.32"
-    `maven`
+    maven
+    `maven-publish`
 }
 
 group = "com.github.NamuTree0345"
