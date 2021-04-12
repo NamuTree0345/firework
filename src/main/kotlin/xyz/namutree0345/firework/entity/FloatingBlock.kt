@@ -12,6 +12,7 @@ class FloatingBlock(val block: Material) : FloatingComponent {
         fallingBlock = location.world.spawnFallingBlock(location, block.createBlockData())
         fallingBlock.setHurtEntities(false)
         fallingBlock.setGravity(false)
+        fallingBlock.dropItem = false
 
         return this
     }
