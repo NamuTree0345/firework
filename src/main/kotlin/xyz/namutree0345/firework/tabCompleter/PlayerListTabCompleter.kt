@@ -19,7 +19,9 @@ class PlayerListTabCompleter : TabCompleter {
         if(args.isNotEmpty()) {
             for (plrname in a) {
                 if(!plrname.startsWith(args[args.size - 1])) {
-                    a.remove(plrname)
+                    if(a.contains(plrname)) {
+                        a.remove(plrname)
+                    }
                 }
             }
         }
